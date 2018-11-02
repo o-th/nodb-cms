@@ -14,8 +14,7 @@ Basic CMS that doesnt require a database, uses php and text files to write and r
 ```
 **Breakdown**
 
-Example:
-
+Example:<br>
 ```<form action="contentUpdate_Handler.php?page=page1&return=page1_Edit.php" method="post">```
 
 What to change:
