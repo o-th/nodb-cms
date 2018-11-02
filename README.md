@@ -1,7 +1,7 @@
 # No Database Content Management System
 
 ## What is this?
-Basic CMS that doesnt require a database, uses php and text files to write and read information. This doesnt have a built in login system, for a no database login system check out nodb-login.
+Basic CMS that doesnt require a database, uses php and text files to write and read information. This doesnt have a built in login system, for a no database login system check out [nodb-login](https://github.com/isteinbrook/nodb-login).
 
 ## Basic Implementation
 *The following is a breakdown of the code in [example](https://github.com/isteinbrook/nodb-cms/tree/master/example)*
