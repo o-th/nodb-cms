@@ -13,12 +13,14 @@ Basic CMS that doesnt require a database, uses php and text files to write and r
 </form>
 ```
 **Breakdown**
-
+Example:
 ```<form action="contentUpdate_Handler.php?page=page1&return=page1_Edit.php" method="post">```
-
+What to change:
 action="contentUpdate_Handler.php?page=**`page1`**&return=**`page1_Edit.php`**"
 
+Example:
 ```<textarea type="text" name="txt" width="100%" style="height:200px; width:100%;"><?php echo file_get_contents("pageContents/page1_Content.txt"); ?></textarea><br>```
+What to change:
 echo file_get_contents("**`pageContents/page1_Content.txt`**");
 
 ### Handler
