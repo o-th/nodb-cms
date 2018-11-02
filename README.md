@@ -4,7 +4,7 @@
 Basic CMS that doesnt require a database, uses php and text files to write and read information. This doesnt have a built in login system, for a no database login system check out nodb-login.
 
 ## Basic Implementation
-*All files included in [example](https://github.com/isteinbrook/nodb-cms/tree/master/example)*
+*The following is a breakdown of the code in [example](https://github.com/isteinbrook/nodb-cms/tree/master/example)*
 ### Editor
 ```
 <form action="contentUpdate_Handler.php?page=page1&return=page1_Edit.php" method="post">
