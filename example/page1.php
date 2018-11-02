@@ -1,0 +1,1 @@
+<?php echo file_get_contents( "pageContents/page1_Content.txt" ); ?>
