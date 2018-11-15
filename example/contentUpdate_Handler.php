@@ -1,5 +1,5 @@
 <?php
-$myfile = fopen("pageContents/".$_GET["page"]."_Content.txt", "w") or die("Unable to open file!");
+$myfile = fopen("pageContents/".$_GET["page"], "w") or die("Unable to open file!");
 fwrite($myfile, $_POST["txt"]);
 fclose($myfile);
 ?>
