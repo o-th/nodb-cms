@@ -7,15 +7,15 @@ Basic CMS that doesnt require a database, uses php and text files to write and r
 *The following is a breakdown of the code in [example](https://github.com/isteinbrook/nodb-cms/tree/master/example)*
 ### Editor
 ```
-<form action="contentUpdate_Handler.php?page=page1&return=page1_Edit.php" method="post">
-  <textarea type="text" name="txt" width="100%" style="height:200px; width:100%;"><?php echo file_get_contents("pageContents/page1_Content.txt"); ?></textarea><br>
+<form action="contentUpdate_Handler.php?page=page1_Content.txt&return=page1_Edit.php" method="post">
+  <textarea type="text" name="txt" width="100%" style="height:200px; width:100%;"><?php echo file_get_contents( "pageContents/page1_Content.txt" ); ?></textarea><br>
   <input type="submit" value="Save">
 </form>
 ```
 **Breakdown**
 
 Example:<br>
-```<form action="contentUpdate_Handler.php?page=page1&return=page1_Edit.php" method="post">```
+```<form action="contentUpdate_Handler.php?page=page1_Content.txt&return=page1_Edit.php" method="post">```
 
 What to change:Page name and page edit name.<br>
 action="contentUpdate_Handler.php?page=**`page1`**&return=**`page1_Edit.php`**"
@@ -29,7 +29,7 @@ echo file_get_contents("**`pageContents/page1_Content.txt`**");
 ### Handler
 ```php
 <?php
-$myfile = fopen("pageContents/".$_GET["page"]."_Content.txt", "w") or die("Unable to open file!");
+$myfile = fopen("pageContents/".$_GET["page"], "w") or die("Unable to open file!");
 fwrite($myfile, $_POST["txt"]);
 fclose($myfile);
 ?>
@@ -39,7 +39,7 @@ fclose($myfile);
 
 **Breakdown**
 What to change: this will need no change unless you want to change the naming format, in that case then simple change the following highlighted in bold.
-$myfile = fopen("**pageContents/".$_GET["page"]."_Content.txt**", "w") or die("Unable to open file!");
+$myfile = fopen("pageContents/".$_GET["page"], "w") or die("Unable to open file!");
 
 ### Display
 ```php
