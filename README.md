@@ -52,6 +52,3 @@ Example:<br>
 
 What to change: File location.<br>
 echo file_get_contents( "pageContents/**page1_Content.txt**" );
-
-## Naming Format
-In its current setup all you need to display the information in a text file is the code under the [display](https://github.com/isteinbrook/nodb-cms#display) section. Under the editor, handler, and display sections all files are retrieved from `pageContents/pageName_Content.txt` simple changed this in each section to meet your own format.
